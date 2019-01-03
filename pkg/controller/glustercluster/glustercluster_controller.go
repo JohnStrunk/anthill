@@ -18,8 +18,10 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/source"
 
 	operatorv1alpha1 "github.com/gluster/anthill/pkg/apis/operator/v1alpha1"
+	"github.com/gluster/anthill/pkg/controller/glustercluster/procedures"
 )
 
+var procedureList := procedures.AllProcedures
 var log = logf.Log.WithName("controller_glustercluster")
 
 /**
